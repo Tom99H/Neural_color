@@ -23,6 +23,14 @@ int w33;
 int w34;
 int w35;
 
+typedef struct {
+    float neuron[6][6];
+} NEURON_t;
+
+typedef struct {
+
+	NEURON_t grids[3];
+} LAYERS_t;
 
 
 int hidden_layout[6][3];
@@ -30,7 +38,7 @@ int main(void){
 // Naplnění nulami
 for (int j = 0; j < 3; j++){
     for (int i = 0; i < 6; i++){
-        kinosal[i][j] = 0;
+        hidden_layout[i][j] = 0;
     }
 }
 return 0;
