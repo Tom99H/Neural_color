@@ -24,7 +24,8 @@ int w34;
 int w35;
 
 
-int kinosal[6][3];
+
+int hidden_layout[6][3];
 int main(void){
 // Naplnění nulami
 for (int j = 0; j < 3; j++){
